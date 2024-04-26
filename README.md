@@ -1,16 +1,25 @@
 ### Commands:
 `up arrow` - Moves selected image 1 pixel up.
+
 `down arrow` - Moves selected image 1 pixel down.
+
 `left arrow` - Moves selected image 1 pixel left.
+
 `right arrow` - Moves selected image 1 pixel right.
+
 `enter` - Confirms the change with the image selected (does not save changes)
+
 
 `left click`- On an image selects that image to move.
 
 In progress commands, have to do with scaling which doesn't currently save to plist files.:
+
 `-` - x scale down
+
 `=` - x scale up
+
 `[` - y scale down
+
 `]` - y scale up
 
 ### How to use the application
