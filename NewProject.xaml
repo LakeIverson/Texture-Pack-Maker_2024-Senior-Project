@@ -1,0 +1,20 @@
+<Window x:Class="Senior_Project___Texture_Pack_Maker.NewProject"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Senior_Project___Texture_Pack_Maker"
+        mc:Ignorable="d"
+        Title="Texture Pack Maker" Height="108" Width="294" MinWidth="317" MinHeight="134" MaxHeight="134" MaxWidth="317" SizeToContent="WidthAndHeight">
+    <Grid Margin="0,0,0,-6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBox Name="ProjectName" HorizontalAlignment="Left" Grid.Row="1" Text="" VerticalAlignment="Top" Width="284" Height="29" TextAlignment="Center" Background="WhiteSmoke" FontSize="20" MaxLines="1" MaxLength="255" IsUndoEnabled="False" Margin="10,31,0,0"/>
+        <Button Content="  Confirm  " HorizontalAlignment="Right" Margin="0,0,10,10" Grid.Row="1" VerticalAlignment="Bottom" Click="Save"/>
+        <Button Content="  Cancel  " HorizontalAlignment="Right" Margin="0,0,75,10" Grid.Row="1" VerticalAlignment="Bottom" Click="Close"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Project Name:" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

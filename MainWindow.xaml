@@ -1,0 +1,40 @@
+﻿<Window x:Class="Senior_Project___Texture_Pack_Maker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Senior_Project___Texture_Pack_Maker"
+        mc:Ignorable="d"
+        Title="Texture Pack Maker" MinHeight="800" MinWidth="1400" SizeToContent="WidthAndHeight" >
+    <Grid x:Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Menu -->
+        <DockPanel Grid.Row="0" Canvas.ZIndex="10000">
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_New Project" Click="New_Project"/>
+                    <MenuItem Header="_Open Project" Click="Open_Project"/>
+                    <MenuItem Header="_Open Project Location" Click="Open_Project_Location"/>
+                </MenuItem>
+                <MenuItem Header="_Add Gamesheet" Click="Split"/>
+                <MenuItem Header="_Generate Texture Pack" Click="Merge"/>
+                <MenuItem Header="_Change Workspace">
+                    <MenuItem x:Name="mainmenu" Header="_Main Menu" IsCheckable="True" Checked="Set_MainMenu" Unchecked="Unset_Workspace"/>
+                    <!-- <MenuItem Header="_Online Menu" IsCheckable="True" Checked="Set_OnlineMenu" Unchecked="Unset_Workspace"/> -->
+                </MenuItem>
+                <MenuItem Header="_Save Workspace Changes" Click="Save"/>
+            </Menu>
+        </DockPanel>
+
+        <Canvas x:Name="canvas" Grid.Row="1">
+            <Image x:Name="WorkSpace" Source="/WorkspaceImages/Blank.png" MinWidth="1280" Width="1280" Height="720" Canvas.Left="0" Canvas.Top="0" Canvas.ZIndex="-100"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Canvas>
+        
+        </Grid>
+</Window>

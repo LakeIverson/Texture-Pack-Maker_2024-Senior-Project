@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Senior_Project___Texture_Pack_Maker</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>WorkspaceImages\smile.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="diffIcon_02_btn_001.png" />
+    <None Remove="WorkspaceImages\Blank.png" />
+    <None Remove="WorkspaceImages\MainMenu.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="WorkspaceImages\smile.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="diffIcon_02_btn_001.png" />
+    <Resource Include="WorkspaceImages\Blank.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="WorkspaceImages\MainMenu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
