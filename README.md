@@ -1,3 +1,6 @@
+### Example video:
+https://youtu.be/2zS-eyuAS5A
+
 ### Commands:
 `up arrow` - Moves selected image 1 pixel up.
 
